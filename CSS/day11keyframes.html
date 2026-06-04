@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyframes</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            animation: move1 10s infinite alternate;
+        }
+
+        /* @keyframes move1{
+            from{
+                transform:translateX(0px)
+            }
+            to{
+                transform:translateX(300px)
+            }
+        } */
+
+        @keyframes move1 {
+            0% {
+                background-color: lightblue;
+                transform: translateX(0px);
+                border-radius: 0px;
+            }
+
+            50% {
+                background-color: lightgreen;
+                transform: translateX(300px);
+                border-radius: 50%;
+            }
+            100%{
+                background-color: red;
+                transform: translateX(600px);
+                border-radius: 100px;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box</div>
+</body>
+
+</html>

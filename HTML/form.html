@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset>
+        <legend>Personal Information</legend>
+         <form action="/submit-form">
+        <label for="firstnameId">FirstName:</label>
+        <input type="text" name="firstname" id="firstnameId"><br>
+        <label for="lastnameId">LastName:</label>
+        <input type="text" name="firstname" id="lastnameId"><br>
+        <label for="passwordId">password</label>
+        <input type="password" name="password" id="passwordId"><br>
+        <label for="fileId">Resume</label>
+        <input type="file" name="file" id="fileId"><br>
+        <label for="dateId">DateOfBirth</label>
+        <input type="date" name="date" id="dateId"><br>
+        <label for="timeId">Time</label>
+        <input type="time" name="time" id="timeId"><br>
+        <label for="emailId">email</label>
+        <input type="email" name="email" id="email">
+        <label for="java">select courses</label>
+        <input type="checkbox" name="jave" id="java" value="java">
+        <label for="java">Java</label>
+        <input type="checkbox" name="python" id="python" value="python">
+        <label for="python">python</label><br>
+        <label for="colorId">select color</label>
+        <input type="color" id="coloreId" name="color"><br>
+        <label for="choose">choose course</label>
+        <select name="choose" id="choose">
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value=".net">.net</option>
+        </select>
+        <select>
+            <optgroup label="German Cars">
+                <option>Audi</option>
+                <option>BMW</option>
+            </optgroup>
+            <optgroup label="Swedish Cars">
+                <option>Volvo</option>
+            </optgroup>
+        </select>
+        <button type="submit">submit</button>
+        <textarea cols="20" rows="15">Feedback</textarea>
+    </form>
+    </fieldset>
+   
+</body>
+
+</html>

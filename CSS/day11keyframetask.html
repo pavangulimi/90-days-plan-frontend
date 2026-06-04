@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframe Task</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            animation: move1 2s infinite alternate;
+            border-radius:50%;
+        }
+
+        @keyframes move1 {
+            0% {
+                background-color: rgba(173, 230, 175, 0.756);
+                transform: translateY(200px);
+                
+            }
+
+            /* 50% {
+                background-color: lightgreen;
+                transform: translateY(100px);
+                border-radius: 50%;
+            } */
+            100%{
+                background-color: red;
+                transform: translateY(0px);
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

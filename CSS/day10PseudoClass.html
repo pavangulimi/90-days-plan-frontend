@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseduo Class Elements</title>
+    <style>
+        button:hover{
+            background-color:lightblue;
+        }
+        a:link{
+            color:blue;
+        }
+        a:visited{
+            color:purple;
+        }
+        a:active{
+            color:red;
+        }
+        input:focus{
+                border:2px solid blue;
+
+        }
+        li:first-child{
+            color:green;
+        }
+        li:last-child{
+            color:orange;
+        }
+        li:nth-child(even){
+            color:gray;
+        }
+        li:nth-child(odd){
+            color:cyan;
+        }
+    </style>
+</head>
+<body>
+    <button  type="submit">Click me</button><br>
+    <a  target="_blank" href="https://www.zomato.com/">Zomato</a>
+    <input type="text" placeholder="Enter your name">
+    <ul>
+        <li>Java</li>
+        <li>
+            python
+        </li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+</html>
